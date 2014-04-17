@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058877226ED244639EF306BE /* libPods-KiwiUnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFD052287A64C898B1133B2 /* libPods-KiwiUnitTest.a */; };
+		0BA299D55855431E82623288 /* libPods-TyphoonExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105CC8E991845E0A5668353 /* libPods-TyphoonExample.a */; };
+		8310DBC218FEEE7A00F5048F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CEA818DAA32C007CD7B2 /* XCTest.framework */; };
+		8310DBC318FEEE7A00F5048F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE8F18DAA32C007CD7B2 /* Foundation.framework */; };
+		8310DBC418FEEE7A00F5048F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE9318DAA32C007CD7B2 /* UIKit.framework */; };
+		8310DBCA18FEEE7A00F5048F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8310DBC818FEEE7A00F5048F /* InfoPlist.strings */; };
+		8310DBCC18FEEE7A00F5048F /* KiwiUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310DBCB18FEEE7A00F5048F /* KiwiUnitTest.m */; };
+		83F2BCA818FEF240001BA9E3 /* libPods-TyphoonExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105CC8E991845E0A5668353 /* libPods-TyphoonExample.a */; };
+		FA56B15418DAAFD4009F88D8 /* CoreComponentsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56B15318DAAFD4009F88D8 /* CoreComponentsFactory.m */; };
+		FA56B15818DAB032009F88D8 /* UserDefaultsSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56B15718DAB032009F88D8 /* UserDefaultsSettings.m */; };
+		FA56B15C18DAB127009F88D8 /* ApiServiceMock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56B15B18DAB127009F88D8 /* ApiServiceMock.m */; };
+		FA56B16118DAB200009F88D8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56B15F18DAB200009F88D8 /* LoginViewController.m */; };
+		FA56B16218DAB200009F88D8 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA56B16018DAB200009F88D8 /* LoginViewController.xib */; };
+		FA56B16518DAB313009F88D8 /* ViewControllersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56B16418DAB313009F88D8 /* ViewControllersFactory.m */; };
+		FA56B16918DAB390009F88D8 /* SuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56B16718DAB390009F88D8 /* SuccessViewController.m */; };
+		FA56B16A18DAB390009F88D8 /* SuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA56B16818DAB390009F88D8 /* SuccessViewController.xib */; };
+		FAB0CE9018DAA32C007CD7B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE8F18DAA32C007CD7B2 /* Foundation.framework */; };
+		FAB0CE9218DAA32C007CD7B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE9118DAA32C007CD7B2 /* CoreGraphics.framework */; };
+		FAB0CE9418DAA32C007CD7B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE9318DAA32C007CD7B2 /* UIKit.framework */; };
+		FAB0CE9A18DAA32C007CD7B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB0CE9818DAA32C007CD7B2 /* InfoPlist.strings */; };
+		FAB0CE9C18DAA32C007CD7B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0CE9B18DAA32C007CD7B2 /* main.m */; };
+		FAB0CEA018DAA32C007CD7B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0CE9F18DAA32C007CD7B2 /* AppDelegate.m */; };
+		FAB0CEA218DAA32C007CD7B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0CEA118DAA32C007CD7B2 /* Images.xcassets */; };
+		FAB0CEA918DAA32C007CD7B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CEA818DAA32C007CD7B2 /* XCTest.framework */; };
+		FAB0CEAA18DAA32C007CD7B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE8F18DAA32C007CD7B2 /* Foundation.framework */; };
+		FAB0CEAB18DAA32C007CD7B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0CE9318DAA32C007CD7B2 /* UIKit.framework */; };
+		FAB0CEB318DAA32C007CD7B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB0CEB118DAA32C007CD7B2 /* InfoPlist.strings */; };
+		FAB0CEB518DAA32C007CD7B2 /* TyphoonExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB0CEB418DAA32C007CD7B2 /* TyphoonExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8310DBCE18FEEE7A00F5048F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB0CE8418DAA32C007CD7B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB0CE8B18DAA32C007CD7B2;
+			remoteInfo = TyphoonExample;
+		};
+		FAB0CEAC18DAA32C007CD7B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB0CE8418DAA32C007CD7B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB0CE8B18DAA32C007CD7B2;
+			remoteInfo = TyphoonExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FFD052287A64C898B1133B2 /* libPods-KiwiUnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiUnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5105CC8E991845E0A5668353 /* libPods-TyphoonExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TyphoonExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C6F18E4EF184B45908F8C59 /* Pods-TyphoonExample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TyphoonExample.xcconfig"; path = "Pods/Pods-TyphoonExample.xcconfig"; sourceTree = "<group>"; };
+		8310DBC118FEEE7A00F5048F /* KiwiUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KiwiUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8310DBC718FEEE7A00F5048F /* KiwiUnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KiwiUnitTest-Info.plist"; sourceTree = "<group>"; };
+		8310DBC918FEEE7A00F5048F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8310DBCB18FEEE7A00F5048F /* KiwiUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KiwiUnitTest.m; sourceTree = "<group>"; };
+		8310DBCD18FEEE7A00F5048F /* KiwiUnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KiwiUnitTest-Prefix.pch"; sourceTree = "<group>"; };
+		AD8633923D3E48FCBB9B68B2 /* Pods-KiwiUnitTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiUnitTest.xcconfig"; path = "Pods/Pods-KiwiUnitTest.xcconfig"; sourceTree = "<group>"; };
+		FA56B15218DAAFD4009F88D8 /* CoreComponentsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreComponentsFactory.h; sourceTree = "<group>"; };
+		FA56B15318DAAFD4009F88D8 /* CoreComponentsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreComponentsFactory.m; sourceTree = "<group>"; };
+		FA56B15618DAB032009F88D8 /* UserDefaultsSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsSettings.h; sourceTree = "<group>"; };
+		FA56B15718DAB032009F88D8 /* UserDefaultsSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsSettings.m; sourceTree = "<group>"; };
+		FA56B15918DAB044009F88D8 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		FA56B15A18DAB127009F88D8 /* ApiServiceMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiServiceMock.h; sourceTree = "<group>"; };
+		FA56B15B18DAB127009F88D8 /* ApiServiceMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiServiceMock.m; sourceTree = "<group>"; };
+		FA56B15D18DAB132009F88D8 /* ApiService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiService.h; sourceTree = "<group>"; };
+		FA56B15E18DAB200009F88D8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FA56B15F18DAB200009F88D8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FA56B16018DAB200009F88D8 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		FA56B16318DAB313009F88D8 /* ViewControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllersFactory.h; sourceTree = "<group>"; };
+		FA56B16418DAB313009F88D8 /* ViewControllersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllersFactory.m; sourceTree = "<group>"; };
+		FA56B16618DAB390009F88D8 /* SuccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessViewController.h; sourceTree = "<group>"; };
+		FA56B16718DAB390009F88D8 /* SuccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessViewController.m; sourceTree = "<group>"; };
+		FA56B16818DAB390009F88D8 /* SuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessViewController.xib; sourceTree = "<group>"; };
+		FAB0CE8C18DAA32C007CD7B2 /* TyphoonExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TyphoonExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB0CE8F18DAA32C007CD7B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAB0CE9118DAA32C007CD7B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAB0CE9318DAA32C007CD7B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAB0CE9718DAA32C007CD7B2 /* TyphoonExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TyphoonExample-Info.plist"; sourceTree = "<group>"; };
+		FAB0CE9918DAA32C007CD7B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB0CE9B18DAA32C007CD7B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAB0CE9D18DAA32C007CD7B2 /* TyphoonExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TyphoonExample-Prefix.pch"; sourceTree = "<group>"; };
+		FAB0CE9E18DAA32C007CD7B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAB0CE9F18DAA32C007CD7B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAB0CEA118DAA32C007CD7B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAB0CEA718DAA32C007CD7B2 /* TyphoonExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TyphoonExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB0CEA818DAA32C007CD7B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FAB0CEB018DAA32C007CD7B2 /* TyphoonExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TyphoonExampleTests-Info.plist"; sourceTree = "<group>"; };
+		FAB0CEB218DAA32C007CD7B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAB0CEB418DAA32C007CD7B2 /* TyphoonExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TyphoonExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8310DBBE18FEEE7A00F5048F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8310DBC218FEEE7A00F5048F /* XCTest.framework in Frameworks */,
+				83F2BCA818FEF240001BA9E3 /* libPods-TyphoonExample.a in Frameworks */,
+				8310DBC418FEEE7A00F5048F /* UIKit.framework in Frameworks */,
+				8310DBC318FEEE7A00F5048F /* Foundation.framework in Frameworks */,
+				058877226ED244639EF306BE /* libPods-KiwiUnitTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB0CE8918DAA32C007CD7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB0CE9218DAA32C007CD7B2 /* CoreGraphics.framework in Frameworks */,
+				FAB0CE9418DAA32C007CD7B2 /* UIKit.framework in Frameworks */,
+				FAB0CE9018DAA32C007CD7B2 /* Foundation.framework in Frameworks */,
+				0BA299D55855431E82623288 /* libPods-TyphoonExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB0CEA418DAA32C007CD7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB0CEA918DAA32C007CD7B2 /* XCTest.framework in Frameworks */,
+				FAB0CEAB18DAA32C007CD7B2 /* UIKit.framework in Frameworks */,
+				FAB0CEAA18DAA32C007CD7B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8310DBC518FEEE7A00F5048F /* KiwiUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				8310DBCB18FEEE7A00F5048F /* KiwiUnitTest.m */,
+				8310DBC618FEEE7A00F5048F /* Supporting Files */,
+			);
+			path = KiwiUnitTest;
+			sourceTree = "<group>";
+		};
+		8310DBC618FEEE7A00F5048F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8310DBC718FEEE7A00F5048F /* KiwiUnitTest-Info.plist */,
+				8310DBC818FEEE7A00F5048F /* InfoPlist.strings */,
+				8310DBCD18FEEE7A00F5048F /* KiwiUnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA56B15118DAAFAD009F88D8 /* TyphoonAssembies */ = {
+			isa = PBXGroup;
+			children = (
+				FA56B15218DAAFD4009F88D8 /* CoreComponentsFactory.h */,
+				FA56B15318DAAFD4009F88D8 /* CoreComponentsFactory.m */,
+				FA56B16318DAB313009F88D8 /* ViewControllersFactory.h */,
+				FA56B16418DAB313009F88D8 /* ViewControllersFactory.m */,
+			);
+			path = TyphoonAssembies;
+			sourceTree = "<group>";
+		};
+		FA56B15518DAAFF1009F88D8 /* CoreComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FA56B15918DAB044009F88D8 /* Settings.h */,
+				FA56B15D18DAB132009F88D8 /* ApiService.h */,
+				FA56B16C18DAD30E009F88D8 /* Implementations */,
+			);
+			path = CoreComponents;
+			sourceTree = "<group>";
+		};
+		FA56B16B18DAB3B4009F88D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA56B15E18DAB200009F88D8 /* LoginViewController.h */,
+				FA56B15F18DAB200009F88D8 /* LoginViewController.m */,
+				FA56B16018DAB200009F88D8 /* LoginViewController.xib */,
+				FA56B16618DAB390009F88D8 /* SuccessViewController.h */,
+				FA56B16718DAB390009F88D8 /* SuccessViewController.m */,
+				FA56B16818DAB390009F88D8 /* SuccessViewController.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		FA56B16C18DAD30E009F88D8 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FA56B15618DAB032009F88D8 /* UserDefaultsSettings.h */,
+				FA56B15718DAB032009F88D8 /* UserDefaultsSettings.m */,
+				FA56B15A18DAB127009F88D8 /* ApiServiceMock.h */,
+				FA56B15B18DAB127009F88D8 /* ApiServiceMock.m */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		FAB0CE8318DAA32B007CD7B2 = {
+			isa = PBXGroup;
+			children = (
+				FAB0CE9518DAA32C007CD7B2 /* TyphoonExample */,
+				FAB0CEAE18DAA32C007CD7B2 /* TyphoonExampleTests */,
+				8310DBC518FEEE7A00F5048F /* KiwiUnitTest */,
+				FAB0CE8E18DAA32C007CD7B2 /* Frameworks */,
+				FAB0CE8D18DAA32C007CD7B2 /* Products */,
+				7C6F18E4EF184B45908F8C59 /* Pods-TyphoonExample.xcconfig */,
+				AD8633923D3E48FCBB9B68B2 /* Pods-KiwiUnitTest.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB0CE8D18DAA32C007CD7B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0CE8C18DAA32C007CD7B2 /* TyphoonExample.app */,
+				FAB0CEA718DAA32C007CD7B2 /* TyphoonExampleTests.xctest */,
+				8310DBC118FEEE7A00F5048F /* KiwiUnitTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB0CE8E18DAA32C007CD7B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0CE8F18DAA32C007CD7B2 /* Foundation.framework */,
+				FAB0CE9118DAA32C007CD7B2 /* CoreGraphics.framework */,
+				FAB0CE9318DAA32C007CD7B2 /* UIKit.framework */,
+				FAB0CEA818DAA32C007CD7B2 /* XCTest.framework */,
+				5105CC8E991845E0A5668353 /* libPods-TyphoonExample.a */,
+				3FFD052287A64C898B1133B2 /* libPods-KiwiUnitTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAB0CE9518DAA32C007CD7B2 /* TyphoonExample */ = {
+			isa = PBXGroup;
+			children = (
+				FA56B15118DAAFAD009F88D8 /* TyphoonAssembies */,
+				FA56B15518DAAFF1009F88D8 /* CoreComponents */,
+				FA56B16B18DAB3B4009F88D8 /* UI */,
+				FAB0CE9E18DAA32C007CD7B2 /* AppDelegate.h */,
+				FAB0CE9F18DAA32C007CD7B2 /* AppDelegate.m */,
+				FAB0CEA118DAA32C007CD7B2 /* Images.xcassets */,
+				FAB0CE9618DAA32C007CD7B2 /* Supporting Files */,
+			);
+			path = TyphoonExample;
+			sourceTree = "<group>";
+		};
+		FAB0CE9618DAA32C007CD7B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0CE9718DAA32C007CD7B2 /* TyphoonExample-Info.plist */,
+				FAB0CE9818DAA32C007CD7B2 /* InfoPlist.strings */,
+				FAB0CE9B18DAA32C007CD7B2 /* main.m */,
+				FAB0CE9D18DAA32C007CD7B2 /* TyphoonExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB0CEAE18DAA32C007CD7B2 /* TyphoonExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0CEB418DAA32C007CD7B2 /* TyphoonExampleTests.m */,
+				FAB0CEAF18DAA32C007CD7B2 /* Supporting Files */,
+			);
+			path = TyphoonExampleTests;
+			sourceTree = "<group>";
+		};
+		FAB0CEAF18DAA32C007CD7B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0CEB018DAA32C007CD7B2 /* TyphoonExampleTests-Info.plist */,
+				FAB0CEB118DAA32C007CD7B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8310DBC018FEEE7A00F5048F /* KiwiUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8310DBD218FEEE7A00F5048F /* Build configuration list for PBXNativeTarget "KiwiUnitTest" */;
+			buildPhases = (
+				0EA415544E2C4BC0984B0124 /* Check Pods Manifest.lock */,
+				8310DBBD18FEEE7A00F5048F /* Sources */,
+				8310DBBE18FEEE7A00F5048F /* Frameworks */,
+				8310DBBF18FEEE7A00F5048F /* Resources */,
+				290E17E208134C76B9F9BFA3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8310DBCF18FEEE7A00F5048F /* PBXTargetDependency */,
+			);
+			name = KiwiUnitTest;
+			productName = KiwiUnitTest;
+			productReference = 8310DBC118FEEE7A00F5048F /* KiwiUnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAB0CE8B18DAA32C007CD7B2 /* TyphoonExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB0CEB818DAA32C007CD7B2 /* Build configuration list for PBXNativeTarget "TyphoonExample" */;
+			buildPhases = (
+				3AEE120309F9440181C8E7E3 /* Check Pods Manifest.lock */,
+				FAB0CE8818DAA32C007CD7B2 /* Sources */,
+				FAB0CE8918DAA32C007CD7B2 /* Frameworks */,
+				FAB0CE8A18DAA32C007CD7B2 /* Resources */,
+				6BBF4D9DC01D4C3E9419774F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TyphoonExample;
+			productName = TyphoonExample;
+			productReference = FAB0CE8C18DAA32C007CD7B2 /* TyphoonExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB0CEA618DAA32C007CD7B2 /* TyphoonExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB0CEBB18DAA32C007CD7B2 /* Build configuration list for PBXNativeTarget "TyphoonExampleTests" */;
+			buildPhases = (
+				FAB0CEA318DAA32C007CD7B2 /* Sources */,
+				FAB0CEA418DAA32C007CD7B2 /* Frameworks */,
+				FAB0CEA518DAA32C007CD7B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB0CEAD18DAA32C007CD7B2 /* PBXTargetDependency */,
+			);
+			name = TyphoonExampleTests;
+			productName = TyphoonExampleTests;
+			productReference = FAB0CEA718DAA32C007CD7B2 /* TyphoonExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB0CE8418DAA32C007CD7B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Aleksey Garbarev";
+				TargetAttributes = {
+					8310DBC018FEEE7A00F5048F = {
+						TestTargetID = FAB0CE8B18DAA32C007CD7B2;
+					};
+					FAB0CEA618DAA32C007CD7B2 = {
+						TestTargetID = FAB0CE8B18DAA32C007CD7B2;
+					};
+				};
+			};
+			buildConfigurationList = FAB0CE8718DAA32C007CD7B2 /* Build configuration list for PBXProject "TyphoonExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAB0CE8318DAA32B007CD7B2;
+			productRefGroup = FAB0CE8D18DAA32C007CD7B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB0CE8B18DAA32C007CD7B2 /* TyphoonExample */,
+				FAB0CEA618DAA32C007CD7B2 /* TyphoonExampleTests */,
+				8310DBC018FEEE7A00F5048F /* KiwiUnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8310DBBF18FEEE7A00F5048F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8310DBCA18FEEE7A00F5048F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB0CE8A18DAA32C007CD7B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB0CE9A18DAA32C007CD7B2 /* InfoPlist.strings in Resources */,
+				FAB0CEA218DAA32C007CD7B2 /* Images.xcassets in Resources */,
+				FA56B16A18DAB390009F88D8 /* SuccessViewController.xib in Resources */,
+				FA56B16218DAB200009F88D8 /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB0CEA518DAA32C007CD7B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB0CEB318DAA32C007CD7B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA415544E2C4BC0984B0124 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		290E17E208134C76B9F9BFA3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-KiwiUnitTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AEE120309F9440181C8E7E3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBF4D9DC01D4C3E9419774F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TyphoonExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8310DBBD18FEEE7A00F5048F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8310DBCC18FEEE7A00F5048F /* KiwiUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB0CE8818DAA32C007CD7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA56B15C18DAB127009F88D8 /* ApiServiceMock.m in Sources */,
+				FAB0CEA018DAA32C007CD7B2 /* AppDelegate.m in Sources */,
+				FA56B16918DAB390009F88D8 /* SuccessViewController.m in Sources */,
+				FA56B16118DAB200009F88D8 /* LoginViewController.m in Sources */,
+				FA56B15818DAB032009F88D8 /* UserDefaultsSettings.m in Sources */,
+				FAB0CE9C18DAA32C007CD7B2 /* main.m in Sources */,
+				FA56B15418DAAFD4009F88D8 /* CoreComponentsFactory.m in Sources */,
+				FA56B16518DAB313009F88D8 /* ViewControllersFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB0CEA318DAA32C007CD7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB0CEB518DAA32C007CD7B2 /* TyphoonExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8310DBCF18FEEE7A00F5048F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB0CE8B18DAA32C007CD7B2 /* TyphoonExample */;
+			targetProxy = 8310DBCE18FEEE7A00F5048F /* PBXContainerItemProxy */;
+		};
+		FAB0CEAD18DAA32C007CD7B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB0CE8B18DAA32C007CD7B2 /* TyphoonExample */;
+			targetProxy = FAB0CEAC18DAA32C007CD7B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8310DBC818FEEE7A00F5048F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8310DBC918FEEE7A00F5048F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB0CE9818DAA32C007CD7B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB0CE9918DAA32C007CD7B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FAB0CEB118DAA32C007CD7B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB0CEB218DAA32C007CD7B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8310DBD018FEEE7A00F5048F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8633923D3E48FCBB9B68B2 /* Pods-KiwiUnitTest.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TyphoonExample.app/TyphoonExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KiwiUnitTest/KiwiUnitTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KiwiUnitTest/KiwiUnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8310DBD118FEEE7A00F5048F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8633923D3E48FCBB9B68B2 /* Pods-KiwiUnitTest.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TyphoonExample.app/TyphoonExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KiwiUnitTest/KiwiUnitTest-Prefix.pch";
+				INFOPLIST_FILE = "KiwiUnitTest/KiwiUnitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		FAB0CEB618DAA32C007CD7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB0CEB718DAA32C007CD7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB0CEB918DAA32C007CD7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6F18E4EF184B45908F8C59 /* Pods-TyphoonExample.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TyphoonExample/TyphoonExample-Prefix.pch";
+				INFOPLIST_FILE = "TyphoonExample/TyphoonExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FAB0CEBA18DAA32C007CD7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6F18E4EF184B45908F8C59 /* Pods-TyphoonExample.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TyphoonExample/TyphoonExample-Prefix.pch";
+				INFOPLIST_FILE = "TyphoonExample/TyphoonExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FAB0CEBC18DAA32C007CD7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TyphoonExample.app/TyphoonExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TyphoonExample/TyphoonExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TyphoonExampleTests/TyphoonExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FAB0CEBD18DAA32C007CD7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TyphoonExample.app/TyphoonExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TyphoonExample/TyphoonExample-Prefix.pch";
+				INFOPLIST_FILE = "TyphoonExampleTests/TyphoonExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8310DBD218FEEE7A00F5048F /* Build configuration list for PBXNativeTarget "KiwiUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8310DBD018FEEE7A00F5048F /* Debug */,
+				8310DBD118FEEE7A00F5048F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB0CE8718DAA32C007CD7B2 /* Build configuration list for PBXProject "TyphoonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB0CEB618DAA32C007CD7B2 /* Debug */,
+				FAB0CEB718DAA32C007CD7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB0CEB818DAA32C007CD7B2 /* Build configuration list for PBXNativeTarget "TyphoonExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB0CEB918DAA32C007CD7B2 /* Debug */,
+				FAB0CEBA18DAA32C007CD7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB0CEBB18DAA32C007CD7B2 /* Build configuration list for PBXNativeTarget "TyphoonExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB0CEBC18DAA32C007CD7B2 /* Debug */,
+				FAB0CEBD18DAA32C007CD7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB0CE8418DAA32C007CD7B2 /* Project object */;
+}
