@@ -12,6 +12,6 @@ target "TyphoonExampleTests" do
 end
 
 target :KiwiUnitTest, :exclusive => true do
-    pod 'Kiwi'
+    pod 'Kiwi/XCTest'
 end
 

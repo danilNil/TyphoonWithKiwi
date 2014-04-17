@@ -1,9 +1,7 @@
 PODS:
-  - Kiwi (2.2.4):
-    - Kiwi/SenTestingKit
   - Kiwi/ARC (2.2.4)
   - Kiwi/NonARC (2.2.4)
-  - Kiwi/SenTestingKit (2.2.4):
+  - Kiwi/XCTest (2.2.4):
     - Kiwi/ARC
     - Kiwi/NonARC
   - Typhoon (HEAD based on 1.8.2):
@@ -11,7 +9,7 @@ PODS:
   - Typhoon/no-arc (HEAD based on 1.8.2)
 
 DEPENDENCIES:
-  - Kiwi
+  - Kiwi/XCTest
   - Typhoon (HEAD)
 
 SPEC CHECKSUMS:
