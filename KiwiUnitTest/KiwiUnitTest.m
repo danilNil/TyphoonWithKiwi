@@ -3,7 +3,8 @@
 #import "Typhoon.h"
 
 @interface LoginViewController ()
-
+//Testing internal methods is inherently brittle because internal implementation details are by nature the part of a class that changes the most. Your testing experience will be much more fun when it goes through a more stable public interface for the majority of classes.	https://github.com/allending/Kiwi/wiki/Kiwi-FAQ#q-how-do-i-test-my-privateinternal-methods
+//Actually you should create some public interface for all of your classes it make it more testable and more supported.
 @property (weak, nonatomic) IBOutlet UITextField *loginTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 - (IBAction)onLogin:(id)sender;
