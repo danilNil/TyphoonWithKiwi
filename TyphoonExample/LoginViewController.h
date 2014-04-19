@@ -16,6 +16,13 @@
 @property (nonatomic, strong) Injected id<Settings> settings;
 @property (nonatomic, strong) Injected id<ApiService> apiService;
 
+/// Exposing these allows us to test them. Alternatively, we can
+/// keep them internal and expose them in the test; but why go through
+/// the trouble?
+@property (nonatomic, weak) IBOutlet UITextField *loginTextField;
+@property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
+@property (nonatomic, weak) IBOutlet UIButton *loginButton;
+
 @property (nonatomic, strong) Injected ViewControllersFactory *viewControllersFactory;
 
 @end
